@@ -1884,7 +1884,7 @@ pre.highlight {
 .example a::after,
 .sections-list ul li.has-submenu::after {
   font-family: "icons" !important;
-  speak: none;
+  speak-as: none;
   font-style: normal;
   font-weight: normal;
   font-variant: normal;
