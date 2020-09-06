@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+<html>
+  <!-- HEADER -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0" />
+    <title>ProtonX - TensorFlow</title>
+
+    <meta
+      name="description"
+      content="Tạo sự khác biệt cho bản thân với Chứng chỉ nhà phát triển TensorFlow"
+    />
+
+    <link rel="icon" href="./favicon.png" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="http://fonts.googleapis.com/css?family=Montserrat:400,400i,500,500i,700,700i|Noto+Sans:400,400i,700,700i|Source+Code+Pro&amp;subset=latin-ext"
+    />
+    <link rel="stylesheet" href="./doks-theme/assets/css/style.css" />
+    <script
+      type="text/javascript"
+      async
+      src="http://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"
+    ></script>
+  </head>
+
+  <body class="blue" data-spy="scroll" data-target=".js-scrollspy">
+    <div class="offcanvas visible-xs">
+      <ul class="offcanvas__nav">
+        <li>
+          <a href="https://protonx.ai" target="_blank">Trang chủ</a>
+        </li>
+
+        <li>
+          <a href="https://protonx.ai/instructor" target="_blank"
+            >Người hướng dẫn</a
+          >
+        </li>
+
+        <li><a>TensorFlow Project</a></li>
+
+        <li>
+          <a href="https://protonx.ai/ctc" target="_blank">Leetcode 200</a>
+        </li>
+
+        <li>
+          <a href="https://github.com/ProtonX-AI" target="_blank">Github</a>
+        </li>
+      </ul>
+      <!-- /.offcanvas__nav -->
+    </div>
+    <!-- /.offcanvas -->
+
+    <header class="site-header">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12">
+            <a href="./index.html" class="site-header__logo">ProtonX</a>
+
+            <ul class="site-header__nav hidden-xs">
+              <li>
+                <a href="https://protonx.ai" target="_blank">Trang chủ</a>
+              </li>
+
+              <li>
+                <a href="https://protonx.ai/instructor" target="_blank"
+                  >Người hướng dẫn</a
+                >
+              </li>
+
+              <li><a>TensorFlow Project</a></li>
+
+              <li>
+                <a href="https://protonx.ai/ctc" target="_blank"
+                  >Leetcode 200</a
+                >
+              </li>
+
+              <li>
+                <a href="https://github.com/ProtonX-AI" target="_blank"
+                  >Github</a
+                >
+              </li>
+            </ul>
+            <!-- /.site-header__nav -->
+            <button class="offcanvas-toggle visible-xs">
+              <span></span>
+              <span></span>
+              <span></span></button
+            ><!-- /.offcanvas-toggle -->
+          </div>
+          <!-- /.col -->
+        </div>
+        <!-- /.row -->
+      </div>
+      <!-- /.container -->
+    </header>
+    <!-- /.site-header -->
+
+    <div class="hero-subheader">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-7">
+            <div class="align-container" data-mh>
+              <div class="align-inner">
+                <h1 class="hero-subheader__title">TensorFlow Class</h1>
+
+                <p class="hero-subheader__desc">
+                  Tạo sự khác biệt cho bản thân với Chứng chỉ nhà phát triển
+                  TensorFlow. Chứng minh sự thành thạo của bạn trong việc sử
+                  dụng TensorFlow để giải quyết các vấn đề về Deep Learning và
+                  Machine Learning. Được công nhận cho các kỹ năng của bạn và
+                  tham gia Mạng lưới chứng chỉ trên trang chủ của TensorFlow.
+                </p>
+              </div>
+              <!-- /.align-inner -->
+            </div>
+            <!-- /.align-container -->
+          </div>
+          <!-- /.col -->
+          <div class="col-md-4 col-md-offset-1 hidden-xs hidden-sm">
+            <div class="align-container" data-mh>
+              <div class="align-inner">
+                <div class="hero-subheader__author">
+                  <h4>Người hướng dẫn</h4>
+
+                  <div class="instructor">
+                    <a target="_blank" href="https://protonx.ai/instructor">
+                      <img
+                        class="headshot"
+                        src="./doks-theme/assets/images/headshot/ngoc_circle.png"
+                        style="text-align: center"
+                      />
+                      <div style="text-align: center">
+                        Bá Ngọc<br />Giảng viên
+                      </div>
+                    </a>
+                  </div>
+
+                  <h4>Thời gian và Địa điểm</h4>
+                  <p>
+                    WED 19:00 - 21:00<br />
+                    SUN 14:00 - 16:00<br />
+                    <a>Online qua nền tảng Zoom</a>
+                  </p>
+                </div>
+                <!-- /.hero-subheader__author -->
+              </div>
+              <!-- /.align-inner -->
+            </div>
+            <!-- /.align-container -->
+          </div>
+          <!-- /.col -->
+        </div>
+        <!-- /.row -->
+      </div>
+      <!-- /.container -->
+    </div>
+    <!-- /.hero-subheader -->
+
+    <div class="section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="content">
+              <h2 id="announcements">Thông báo</h2>
+              <ul>
+                <li>
+                  <strong
+                    ><span style="background-color: rgba(246, 208, 0, 0.99)"
+                      >Vui lòng sử dụng Slack để thảo luận trong khóa học.</span
+                    ></strong
+                  >
+                </li>
+                <li>
+                  Mọi thắc mắc vui lòng liên hệ tới Email:
+                  <a type="email">protonxta@gmail.com</a>
+                </li>
+              </ul>
+
+              <h2 id="syllabus">Nội dung</h2>
+
+              <table
+                id="schedule"
+                class="table table-bordered no-more-tables"
+                style="width: 100%; font-size: 0.8em"
+              >
+                <colgroup>
+                  <col />
+                  <col />
+                  <col style="width: 30%" />
+                  <col style="width: 40%" />
+                  <col style="width: 30%" />
+                </colgroup>
+                <thead
+                  class="active"
+                  style="background-color: #f9f9f9"
+                  align="left"
+                >
+                  <th>Event</th>
+                  <th>Thời gian</th>
+                  <th>Nội dung trên lớp</th>
+                  <th>Tài liệu tham khảo</th>
+                  <th>Bài tập</th>
+                </thead>
+                <tbody>
+                  <!-- TABLE ROW  -->
+
+                  <!-- LECTURE 01 -->
+                  <tr>
+                    <td>Lecture 1</td>
+                    <td>16/09</td>
+                    <td>
+                      <strong>Topics: </strong>Ôn tập Toán
+                      <ul>
+                        <li>Đại số tuyến tính</li>
+                        <li>Xác suất thống kê</li>
+                      </ul>
+                    </td>
+                    <td>
+                      <!-- UPDATE LATE  -->
+                    </td>
+                    <td>
+                      <strong>Deadline: 23/09</strong>
+                      <ul>
+                        <li>Tính sự tương quan giữa 2 ảnh</li>
+                      </ul>
+                    </td>
+                  </tr>
+
+                  <!-- LECTURE 02 -->
+                  <tr>
+                    <td>Lecture 2</td>
+                    <td>20/09</td>
+                    <td>
+                      <strong>Topics: </strong>Lập trình Python
+                      <ul>
+                        <li></li>
+                      </ul>
+                    </td>
+                    <td>
+                      <!-- UPDATE LATE  -->
+                    </td>
+                    <td></td>
+                  </tr>
+
+                  <!-- LECTURE 03 -->
+                  <tr>
+                    <td>Lecture 3</td>
+                    <td>23/09</td>
+                    <td>
+                      <strong>Topics: </strong>Thuật toán trong khoa học máy
+                      tính
+                      <ul>
+                        <li></li>
+                      </ul>
+                    </td>
+                    <td>
+                      <!-- UPDATE LATE  -->
+                    </td>
+                    <td></td>
+                  </tr>
+
+                  <tr>
+                    <td
+                      id="Module_1"
+                      colspan="5"
+                      style="
+                        text-align: center;
+                        vertical-align: middle;
+                        background-color: #fffde7;
+                      "
+                    >
+                      <strong>Introduction to Machine Learning</strong>
+                    </td>
+                  </tr>
+
+                  <!-- LECTURE 04 -->
+                  <tr>
+                    <td>Lecture 4</td>
+                    <td>27/09</td>
+                    <td>
+                      <strong>Topics: </strong>Giới thiệu AI và ứng dụng
+                      <ul>
+                        <li></li>
+                      </ul>
+                    </td>
+                    <td>
+                      <!-- UPDATE LATE  -->
+                    </td>
+                    <td></td>
+                  </tr>
+
+                  <!-- LECTURE 05 -->
+                  <tr>
+                    <td>Lecture 5</td>
+                    <td>30/09</td>
+                    <td>
+                      <strong>Topics: </strong>Mô hình hồi quy tuyến tính
+                      (Linear Regression)
+                      <ul>
+                        <li></li>
+                      </ul>
+                    </td>
+                    <td>
+                      <!-- UPDATE LATE  -->
+                    </td>
+                    <td></td>
+                  </tr>
+
+                  <!-- LECTURE 06  -->
+                  <tr>
+                    <td>Lecture 6</td>
+                    <td>04/10</td>
+                    <td>
+                      <strong>Topics: </strong>Mô hình hồi quy Logistic
+                      (Logistic Regression)
+                      <ul>
+                        <li></li>
+                      </ul>
+                    </td>
+                    <td>
+                      <!-- UPDATE LATE  -->
+                    </td>
+                    <td></td>
+                  </tr>
+
+                  <!-- KAGGLE -->
+
+                  <tr style="background-color: #b7ffbf">
+                    <td><strong>Kaggle Competition</strong></td>
+                    <td><strong>04/10</strong></td>
+                    <td>
+                      <a>Covid 19 - Classfication</a>
+                    </td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+
+                  <tr>
+                    <td
+                      id="Module_1"
+                      colspan="5"
+                      style="
+                        text-align: center;
+                        vertical-align: middle;
+                        background-color: #fffde7;
+                      "
+                    >
+                      <strong>Neural Network and Deep Learning</strong>
+                    </td>
+                  </tr>
+
+                  <!-- LECTURE 07 -->
+                  <tr>
+                    <td>Lecture 7</td>
+                    <td>07/10</td>
+                    <td>
+                      <strong>Topics: </strong>Neuron Network (Phần 1)
+                      <ul>
+                        <li></li>
+                      </ul>
+                    </td>
+                    <td>
+                      <!-- UPDATE LATE  -->
+                    </td>
+                    <td></td>
+                  </tr>
+
+                  <!-- LECTURE 08 -->
+                  <tr>
+                    <td>Lecture 8</td>
+                    <td>11/10</td>
+                    <td>
+                      <strong>Topics: </strong>Neural Network (Phần 2)
+                      <ul>
+                        <li></li>
+                      </ul>
+                    </td>
+                    <td>
+                      <!-- UPDATE LATE  -->
+                    </td>
+                    <td></td>
+                  </tr>
+
+                  <!-- LECTURE 09 -->
+                  <tr>
+                    <td>Lecture 9</td>
+                    <td>14/10</td>
+                    <td>
+                      <strong>Topics: </strong>Neural Network (Phần 3)
+                      <ul>
+                        <li></li>
+                      </ul>
+                    </td>
+                    <td>
+                      <!-- UPDATE LATE  -->
+                    </td>
+                    <td></td>
+                  </tr>
+
+                  <tr>
+                    <td
+                      id="Module_1"
+                      colspan="5"
+                      style="
+                        text-align: center;
+                        vertical-align: middle;
+                        background-color: #fffde7;
+                      "
+                    >
+                      <strong>Convolutional Neural Network</strong>
+                    </td>
+                  </tr>
+
+                  <!-- LECTURE 10 -->
+                  <tr>
+                    <td>Lecture 10</td>
+                    <td>18/10</td>
+                    <td>
+                      <strong>Topics: </strong>Convolutional Neural Network
+                      (Phần 1)
+                      <ul>
+                        <li></li>
+                      </ul>
+                    </td>
+                    <td>
+                      <!-- UPDATE LATE  -->
+                    </td>
+                    <td></td>
+                  </tr>
+
+                  <!-- LECTURE 11 -->
+                  <tr>
+                    <td>Lecture 11</td>
+                    <td>21/10</td>
+                    <td>
+                      <strong>Topics: </strong>Convolutional Neural Network
+                      (Phần 2)
+                      <ul>
+                        <li></li>
+                      </ul>
+                    </td>
+                    <td>
+                      <!-- UPDATE LATE  -->
+                    </td>
+                    <td></td>
+                  </tr>
+
+                  <!-- LECTURE 12 -->
+                  <tr>
+                    <td>Lecture 12</td>
+                    <td>25/10</td>
+                    <td>
+                      <strong>Topics: </strong>Transfer-Learning
+                      <ul>
+                        <li></li>
+                      </ul>
+                    </td>
+                    <td>
+                      <!-- UPDATE LATE  -->
+                    </td>
+                    <td></td>
+                  </tr>
+
+                  <!-- KAGGLE -->
+
+                  <tr style="background-color: #b7ffbf">
+                    <td><strong>Kaggle Competition</strong></td>
+                    <td><strong></strong></td>
+                    <td>
+                      <a>Tinder Auto Swipe</a>
+                    </td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+
+                  <tr>
+                    <td
+                      id="Module_1"
+                      colspan="5"
+                      style="
+                        text-align: center;
+                        vertical-align: middle;
+                        background-color: #fffde7;
+                      "
+                    >
+                      <strong>Natural Language Processing</strong>
+                    </td>
+                  </tr>
+
+                  <!-- LECTURE 13 -->
+                  <tr>
+                    <td>Lecture 13</td>
+                    <td>28/10</td>
+                    <td>
+                      <strong>Topics: </strong>Xử lý ngôn ngữ tự nhiên (NLP) -
+                      Tách từ và Padding
+                      <ul>
+                        <li></li>
+                      </ul>
+                    </td>
+                    <td>
+                      <!-- UPDATE LATE  -->
+                    </td>
+                    <td></td>
+                  </tr>
+
+                  <!-- LECTURE 14 -->
+                  <tr>
+                    <td>Lecture 13</td>
+                    <td>01/11</td>
+                    <td>
+                      <strong>Topics: </strong>Mô hình Word2Vec - Xây dựng
+                      Embedding
+                      <ul>
+                        <li></li>
+                      </ul>
+                    </td>
+                    <td>
+                      <!-- UPDATE LATE  -->
+                    </td>
+                    <td></td>
+                  </tr>
+
+                  <!-- LECTURE 15 -->
+                  <tr>
+                    <td>Lecture 15</td>
+                    <td>04/11</td>
+                    <td>
+                      <strong>Topics: </strong>Xây dựng bài toán nhận diện câu
+                      <ul>
+                        <li></li>
+                      </ul>
+                    </td>
+                    <td>
+                      <!-- UPDATE LATE  -->
+                    </td>
+                    <td></td>
+                  </tr>
+
+                  <!-- LECTURE 16 -->
+                  <tr>
+                    <td>Lecture 16</td>
+                    <td>08/11</td>
+                    <td>
+                      <strong>Topics: </strong>Mô hình ngôn ngữ và Mạng nơ-ron
+                      hồi quy (RNN) (Phần 1)
+                      <ul>
+                        <li></li>
+                      </ul>
+                    </td>
+                    <td>
+                      <!-- UPDATE LATE  -->
+                    </td>
+                    <td></td>
+                  </tr>
+
+                  <!-- LECTURE 17 -->
+                  <tr>
+                    <td>Lecture 17</td>
+                    <td>11/11</td>
+                    <td>
+                      <strong>Topics: </strong>Mô hình ngôn ngữ và Mạng nơ-ron
+                      hồi quy (RNN) (Phần 2)
+                      <ul>
+                        <li></li>
+                      </ul>
+                    </td>
+                    <td>
+                      <!-- UPDATE LATE  -->
+                    </td>
+                    <td></td>
+                  </tr>
+
+                  <!-- KAGGLE -->
+
+                  <tr style="background-color: #b7ffbf">
+                    <td><strong>Kaggle Competition</strong></td>
+                    <td><strong></strong></td>
+                    <td>
+                      <a></a>
+                    </td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+
+                  <tr>
+                    <td
+                      id="Module_1"
+                      colspan="5"
+                      style="
+                        text-align: center;
+                        vertical-align: middle;
+                        background-color: #fffde7;
+                      "
+                    >
+                      <strong>Sequences, Time Series</strong>
+                    </td>
+                  </tr>
+
+                  <!-- LECTURE 18 -->
+                  <tr>
+                    <td>Lecture 18</td>
+                    <td>15/11</td>
+                    <td>
+                      <strong>Topics:</strong> Xây dựng mô hình làm việc với
+                      data Time Series (Phần 1)
+                      <ul>
+                        <li></li>
+                      </ul>
+                    </td>
+                    <td>
+                      <!-- UPDATE LATE  -->
+                    </td>
+                    <td></td>
+                  </tr>
+
+                  <!-- LECTURE 19 -->
+                  <tr>
+                    <td>Lecture 19</td>
+                    <td>18/11</td>
+                    <td>
+                      <strong>Topics: </strong>Xây dựng mô hình làm việc với
+                      data Time Series (Phần 2)
+                      <ul>
+                        <li></li>
+                      </ul>
+                    </td>
+                    <td>
+                      <!-- UPDATE LATE  -->
+                    </td>
+                    <td></td>
+                  </tr>
+
+                  <!-- LECTURE 20 -->
+                  <tr>
+                    <td>Lecture 20</td>
+                    <td>22/11</td>
+                    <td>
+                      <strong>Topics: </strong>Bài toán dịch máy (Neural Machine
+                      Translation)
+                      <ul>
+                        <li></li>
+                      </ul>
+                    </td>
+                    <td>
+                      <!-- UPDATE LATE  -->
+                    </td>
+                    <td></td>
+                  </tr>
+
+                  <tr style="background-color: #c1dbf8">
+                    <td><strong></strong></td>
+                    <td><strong></strong></td>
+                    <td>
+                      <a
+                        >Tư vấn dàn bài từ chuyên gia và những học viên đã thi
+                        thành công</a
+                      >
+                    </td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+
+                  <tr style="background-color: #ffb7bf">
+                    <td><strong>Final Project</strong></td>
+                    <td><strong></strong></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <!-- /.content -->
+          </div>
+        </div>
+        <!-- /.row -->
+      </div>
+      <!-- /.container -->
+    </div>
+    <!-- /.section -->
+
+    <div class="js-footer-area">
+      <footer class="site-footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-6">
+              <!-- <hr> -->
+              <p class="site-footer__copyright">
+                Copyright &copy; 2020. - ProtonX <br />All rights reserved.
+              </p>
+            </div>
+            <!-- /.col -->
+          </div>
+          <!-- /.row -->
+        </div>
+        <!-- /.container -->
+      </footer>
+      <!-- /.site-footer -->
+
+      <script src="./doks-theme/assets/js/vendor/jquery.min.js"></script>
+      <script
+        type="text/javascript"
+        src="./doks-theme/assets/js/vendor/bootstrap/affix.min.js"
+      ></script>
+      <script
+        type="text/javascript"
+        src="./doks-theme/assets/js/vendor/bootstrap/scrollspy.min.js"
+      ></script>
+      <script
+        type="text/javascript"
+        src="./doks-theme/assets/js/vendor/matchHeight.min.js"
+      ></script>
+      <script
+        type="text/javascript"
+        src="./doks-theme/assets/js/scripts.min.js"
+      ></script>
+    </div>
+    <!-- /.js-footer-area -->
+  </body>
+</html>
